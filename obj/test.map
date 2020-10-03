@@ -1,0 +1,115 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           cpct_random
+     0000005F  l__DATA                         
+     000002A4  l__CODE                         
+     00004000  s__CODE                         
+     000042A4  s__DATA                         
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_CODE                               00004000    000002A4 =         676. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00004000  _main                              cpct_keyboard
+     0000401C  man_init_entity                    cpct_keyboard
+     00004028  man_create_entity                  cpct_keyboard
+     0000406D  man_destroy_entity                 cpct_keyboard
+     000040AD  man_set4Destruction_entity         cpct_keyboard
+     000040C1  man_free_entity                    cpct_keyboard
+     000040CC  man_search_for_space               cpct_keyboard
+     00004112  sys_generator_newStar              cpct_keyboard
+     00004134  sys_physics_update                 cpct_keyboard
+     00004182  sys_render_1Entity                 cpct_keyboard
+     000041B0  sys_render_update                  cpct_keyboard
+     000041F9  sys_render_init                    cpct_keyboard
+     0000420B  sys_borrar_star                    cpct_keyboard
+     0000420C  cpct_setPALColour_asm              cpct_video
+     00004216  cpct_setVideoMode_asm              cpct_video
+     00004223  _cpct_waitVSYNC                    cpct_video
+     00004223  cpct_waitVSYNC_asm                 cpct_video
+     0000422B  _cpct_disableFirmware              cpct_firmware
+     0000422B  _cpct_removeInterruptHandler       cpct_firmware
+     0000422B  cpct_disableFirmware_asm           cpct_firmware
+     0000422B  cpct_removeInterruptHandler_asm    cpct_firmware
+     0000423B  _cpct_getRandom_mxor_u8            cpct_random
+     0000423B  cpct_getRandom_mxor_u8_asm         cpct_random
+     0000423C  cpct_randomIdx_mxor_u8             cpct_random
+     00004260  _cpct_mode_rom_status              cpct_firmware
+     00004261  cpct_getScreenPtr_asm              cpct_video
+     0000427D  _cpct_mxor32_seed                  cpct_random
+     00004281  _cpct_nextRandom_mxor_u32          cpct_random
+     00004281  cpct_nextRandom_mxor_u32_asm       cpct_random
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+_DATA                               000042A4    0000005F =          95. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000042A4  e_type_invalid                     cpct_keyboard
+     000042A5  e_type_star                        cpct_keyboard
+     000042A6  e_type_dead                        cpct_keyboard
+     000042AD  entity_x                           cpct_keyboard
+     000042AE  entity_y                           cpct_keyboard
+     000042AF  entity_vx                          cpct_keyboard
+     000042B0  entity_color                       cpct_keyboard
+     000042B1  entity_prevptr                     cpct_keyboard
+     000042B2  last_entity_pos_entities           cpct_keyboard
+     000042B4  num_entities                       cpct_keyboard
+     000042B5  entities                           cpct_keyboard
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+
+Files Linked                              [ module(s) ]
+
+obj/main.rel                              [ cpct_keyboard ]
+obj/man/entity.rel                        [ cpct_keyboard ]
+obj/sys/generator.rel                     [ cpct_keyboard ]
+obj/sys/physics.rel                       [ cpct_keyboard ]
+obj/sys/render.rel                        [ cpct_keyboard ]
+
+
+Libraries Linked                          [ object file ]
+
+/home/vladislav/Escritorio/CPCTelera/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_setPALColour_asmbindings.re ]
+/home/vladislav/Escritorio/CPCTelera/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_setVideoMode_asmbindings.re ]
+/home/vladislav/Escritorio/CPCTelera/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_waitVSYNC.rel ]
+/home/vladislav/Escritorio/CPCTelera/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_removeInterruptHandler.rel ]
+/home/vladislav/Escritorio/CPCTelera/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_getRandom_mxor_u8.rel ]
+/home/vladislav/Escritorio/CPCTelera/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpc_mode_rom_status.rel ]
+/home/vladislav/Escritorio/CPCTelera/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_getScreenPtr_asmbindings.re ]
+/home/vladislav/Escritorio/CPCTelera/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_mxor32_seed.rel ]
+/home/vladislav/Escritorio/CPCTelera/cpctelera/cpctelera/cpctelera.lib
+                                          [ cpct_nextRandom_mxor_u32.rel ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+
+User Base Address Definitions
+
+_CODE = 0x4000
+_DATA = 0x0000
+
+

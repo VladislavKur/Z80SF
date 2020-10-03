@@ -1,0 +1,43 @@
+XL2
+H 2 areas A global symbols
+M cpct_keyboard
+S entity_prevptr Ref0000
+S .__.ABS. Def0000
+S last_entity_pos_entities Ref0000
+S entities Ref0000
+S entity_vx Ref0000
+S man_set4Destruction_entity Ref0000
+S entity_x Ref0000
+S cpct_disableFirmware_asm Ref0000
+S cpct_getScreenPtr_asm Ref0000
+A _CODE size 4E flags 0 addr 0
+S sys_physics_update Def0000
+A _DATA size 8 flags 0 addr 0
+T 00 00 FF FF 00 00 FF FF FF FF
+R 00 00 01 00
+T 00 00
+R 00 00 00 00
+T 00 00 21 00 00 22 02 00 7D C6 36 6F EB
+R 00 00 00 00 02 03 03 00 00 06 01 00
+T 0B 00
+R 00 00 00 00
+T 0B 00 01 00 00 ED 4B 02 00 DD 21 00 00 DD 09 DD
+R 00 00 00 00 00 07 01 00
+T 19 00 7E 00 FE 01 20 18 06 00 DD 7E 01 DD 77 05
+R 00 00 00 00
+T 27 00 DD 96 03 DC 00 00 67 78 FE FF 28 04 7C DD
+R 00 00 00 00 02 06 05 00
+T 35 00 77 01
+R 00 00 00 00
+T 37 00
+R 00 00 00 00
+T 37 00
+R 00 00 00 00
+T 37 00 21 02 00 34 34 34 34 34 34 ED 4B 02 00 79
+R 00 00 00 00 00 03 01 00 00 0D 01 00
+T 45 00 BB 20 C3 78 BA 20 BF C9
+R 00 00 00 00
+T 4D 00
+R 00 00 00 00
+T 4D 00 C9
+R 00 00 00 00
